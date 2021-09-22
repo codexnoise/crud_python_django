@@ -8,7 +8,7 @@
 __pycache__
 
 #folder migrations
-migrations/__pycache__
+migrations/
 
 # media image folder
 media
