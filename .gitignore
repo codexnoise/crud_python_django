@@ -1,0 +1,14 @@
+#archivos .pyc
+*.pyc
+
+#archivos .sqlite3
+*.sqlite3
+
+#folder __pycache__
+__pycache__
+
+#folder migrations
+migrations/__pycache__
+
+# media image folder
+media
