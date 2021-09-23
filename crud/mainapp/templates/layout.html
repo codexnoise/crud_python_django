@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title%} {{title}} {% endblock%}</title>
+    <!--{load filters}-->
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="logotipo">
+        <img src="{% static 'images/logo.png' %}" />
+        <h1>CRUD with python and django</h1>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="{% url 'index' %}">Inicio</a>
+        </li>
+        <li>
+          <a href="{% url 'articles' %}">Articulos</a>
+        </li>
+        <li>
+          <a href="{% url 'create_article' %}">Crear Articulo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="barra">
+      <span class="esquina-izquierda"></span>
+      <span class="relleno-barra"></span>
+      <span class="esquina-derecha"></span>
+    </div>
+
+    <div id="content">
+      <div class="box">
+        {% block content%}
+        <!--Codigo que viene de Templates-->
+        <strong>Example for a CRUD developed with Python and Django, in this example we use a MYSQL database Engine</strong>
+        <div id="crud_logo">
+          <img class="center" src="{% static 'images/crud.jfif' %}" />
+        </div>
+        {% endblock %}
+      </div>
+    </div>
+    <hr />
+    <footer> developed by: diegovo &copy; 2021 {% now "d/m/Y" %}</footer>
+  </body>
+</html>
