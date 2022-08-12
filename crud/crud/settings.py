@@ -79,9 +79,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'articles_db',
         'USER': 'root',
-        'PASSWORD': '',
+        'PASSWORD': 'diego_VO001+',
         'HOST': 'localhost',
-        'PORT': '3306',
+        'PORT': '90',
         'OPTIONS': {
             'sql_mode': 'traditional',
         }
@@ -127,6 +127,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#Media Files
+# Media Files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
