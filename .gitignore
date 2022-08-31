@@ -12,3 +12,5 @@ migrations/
 
 # media image folder
 media
+
+.env
