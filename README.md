@@ -7,25 +7,24 @@ Developed with Python, Django, Html and MySQL
 
 ## Installation
 
-Clone or download the repository:
+Clone or download the repository:  
 `https://github.com/noisecodex/crud_python_django.git`
 
-Go to the project directory:
-`cd polls_app`
+Go to the project directory:  
+`cd crud`
 
-Create a virtual environment (PowerShell):
+Create a virtual environment (PowerShell):  
 ` python -m venv venv
   .\venv\Scripts\activate`
 
-Install dependencies:
+Install dependencies:  
 `pip install -r requirements.txt`
 
-Make migrations foe the database:
-`py manage.py makemigrations app
- py manage.py migration
-`
+Make migrations for the database:  
+`py manage.py makemigrations app`  
+ `py manage.py migration`
 
-Run the app:
+Run the app:  
 `py manage.py runserver`
 
 ## Contributing
@@ -33,11 +32,14 @@ Contributions are always welcome!
 
 Fork this repository;
 
-Create a branch with your feature: `git checkout -b my-feature`
+Create a branch with your feature:  
+`git checkout -b my-feature`
 
-Commit your changes: `git commit -m "feat: my new feature"`
+Commit your changes:  
+`git commit -m "feat: my new feature"`
 
-Push to your branch: `git push origin my-feature `
+Push to your branch:  
+`git push origin my-feature `
 
 ## Author
 @noisecodex
